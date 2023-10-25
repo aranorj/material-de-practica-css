@@ -1,78 +1,44 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-
-.header {
+header {
     background-color: #333;
     color: #fff;
     padding: 10px;
 }
-
-.header__nav {
-    text-align: center;
-}
-
-.nav__list {
+nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
-
-.nav__item {
+nav li {
     display: inline;
     margin: 0 15px;
 }
-
-.nav__link {
+nav a {
     text-decoration: none;
     color: #fff;
 }
-
-.main {
+main {
     padding: 20px;
 }
-
-.product {
+article {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
     display: inline-block;
     width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Efecto de brillo (glow) */
 }
-
-.product__title {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.product__image {
+img {
     max-width: 100%;
 }
-
-.product__description {
-    font-size: 14px;
-}
-
-.product__price {
-    font-size: 16px;
-    font-weight: bold;
-    color: #0077cc;
-}
-
-.footer {
+footer {
     background-color: #333;
     color: #fff;
     padding: 10px;
     text-align: center;
-}
-
-.footer__contact {
-    font-size: 14px;
-}
-
-.footer__contact-link {
-    color: #0077cc;
 }
