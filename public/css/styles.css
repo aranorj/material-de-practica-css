@@ -1,3 +1,8 @@
+/* Estilos generales */
+ 
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -5,24 +10,32 @@ body {
     padding: 0;
 }
 
+/* Estilos para el encabezado */
 .header {
     background-color: #333;
     color: #fff;
     padding: 10px;
+    text-align: center; /* Centramos el contenido en dispositivos móviles */
+}
+
+.menu-icon {
+    font-size: 4vw; /* Tamaño relativo al ancho de la pantalla (vw) */
+    cursor: pointer;
 }
 
 .header__nav {
-    text-align: center;
+    display: none; /* Ocultamos la navegación en dispositivos móviles */
+    text-align: center; /* Centramos el contenido en dispositivos móviles */
 }
 
+/* Estilos para la lista de navegación */
 .nav__list {
     list-style: none;
     padding: 0;
 }
 
 .nav__item {
-    display: inline;
-    margin: 0 15px;
+    margin: 2vw 0; /* Márgenes utilizando vw */
 }
 
 .nav__link {
@@ -30,17 +43,19 @@ body {
     color: #fff;
 }
 
+/* Estilos para el contenido principal */
 .main {
     padding: 20px;
 }
 
+/* Estilos para los productos */
 .product {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
     display: inline-block;
-    width: 200px;
+    width: 90%; /* Usamos el 90% del ancho disponible */
 }
 
 .product__title {
@@ -49,7 +64,7 @@ body {
 }
 
 .product__image {
-    max-width: 100%;
+    width: 100%; /* Las imágenes se ajustarán automáticamente al ancho del contenedor */
 }
 
 .product__description {
@@ -62,17 +77,42 @@ body {
     color: #0077cc;
 }
 
+/* Estilos para el pie de página */
 .footer {
     background-color: #333;
     color: #fff;
     padding: 10px;
-    text-align: center;
+    text-align: center; /* Centramos el contenido en dispositivos móviles */
 }
 
-.footer__contact {
-    font-size: 14px;
-}
-
+/* Estilos para los enlaces de contacto en el pie de página */
 .footer__contact-link {
     color: #0077cc;
+}
+
+
+/* Media Query para pantallas más grandes */
+@media (min-width: 768px) {
+    .menu-icon {
+        display: none; /* Ocultamos el ícono de hamburguesa en pantallas más grandes */
+    }
+
+    .header__nav {
+        display: block; /* Mostramos la navegación en pantallas más grandes */
+    }
+
+    .nav__list {
+        text-align: center;
+    }
+
+    .product {
+        display: inline-block; /* Hacemos que los productos se alineen en filas */
+        width: 30% ; 
+        margin: 10px; /* Espacio entre los elementos */
+    }
+
+    .nav__item {
+        display: inline;
+        margin: 0 15px;
+    }
 }
