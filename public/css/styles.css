@@ -15,8 +15,8 @@ body {
     background-color: #333;
     color: #fff;
     padding: 10px;
-    text-align: center; /* Centramos el contenido en dispositivos móviles */
-}
+    text-align: center;
+};
 
 .menu-icon {
     font-size: 4vw; /* Tamaño relativo al ancho de la pantalla (vw) */
@@ -25,13 +25,15 @@ body {
 
 .header__nav {
     display: none; /* Ocultamos la navegación en dispositivos móviles */
-    text-align: center; /* Centramos el contenido en dispositivos móviles */
+    text-align: center;/* Centramos el contenido en dispositivos móviles */
 }
 
 /* Estilos para la lista de navegación */
 .nav__list {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .nav__item {
@@ -43,12 +45,16 @@ body {
     color: #fff;
 }
 
-/* Estilos para el contenido principal */
-.main {
-    padding: 20px;
-}
 
 /* Estilos para los productos */
+.products-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .product {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -105,14 +111,16 @@ body {
         text-align: center;
     }
 
+    .products-container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
     .product {
-        display: inline-block; /* Hacemos que los productos se alineen en filas */
         width: 30% ; 
-        margin: 10px; /* Espacio entre los elementos */
     }
 
     .nav__item {
-        display: inline;
         margin: 0 15px;
     }
 }
