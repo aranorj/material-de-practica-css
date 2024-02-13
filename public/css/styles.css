@@ -29,16 +29,16 @@ body {
 }
 
 /* Estilos para la lista de navegación */
-.nav__list {
+.navegacionCentral__list {
     list-style: none;
     padding: 0;
 }
 
-.nav__item {
+.navegacionCentral__item {
     margin: 2vw 0; /* Márgenes utilizando vw */
 }
 
-.nav__link {
+.navegacionCentral__link {
     text-decoration: none;
     color: #fff;
 }
@@ -93,26 +93,5 @@ body {
 
 /* Media Query para pantallas más grandes */
 @media (min-width: 768px) {
-    .menu-icon {
-        display: none; /* Ocultamos el ícono de hamburguesa en pantallas más grandes */
-    }
-
-    .header__nav {
-        display: block; /* Mostramos la navegación en pantallas más grandes */
-    }
-
-    .nav__list {
-        text-align: center;
-    }
-
-    .product {
-        display: inline-block; /* Hacemos que los productos se alineen en filas */
-        width: 30% ; 
-        margin: 10px; /* Espacio entre los elementos */
-    }
-
-    .nav__item {
-        display: inline;
-        margin: 0 15px;
-    }
+    
 }
