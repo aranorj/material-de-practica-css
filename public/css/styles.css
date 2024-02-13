@@ -23,7 +23,7 @@ body {
     cursor: pointer;
 }
 
-.header__nav {
+.header__navegacionCentral {
     display: none; /* Ocultamos la navegación en dispositivos móviles */
     text-align: center; /* Centramos el contenido en dispositivos móviles */
 }
